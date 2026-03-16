@@ -1,0 +1,143 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Lexend:wght@100..900&family=Limelight&display=swap');
+
+:root {
+    --fonte-geral: 'Lexend', Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-titulo: 'Limelight', 'Lexend', Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-cordel: 'Kalam', cursive;
+    --fundo: ghostwhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-geral);
+    background-color: var(--fundo);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 16px 2px #0000007b;
+}
+
+header h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 5em;
+    font-variant: small-caps;
+}
+
+header h2 {
+    font-size: 1em;
+    font-family: 'Lexend', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+header h2 > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header h2 > a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+header h2 > a:visited, footer a:visited {
+    color: white;
+}
+
+article > section {
+    padding: 10vh 0;
+}
+
+article > section > p {
+    font-family: var(--fonte-cordel);
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 0 60px;
+    font-size: 2em;
+    display: inline-block;
+}
+
+section.estrofe-img {
+    background-color: darkslategrey;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0px 12px 12px -6px #0000007b, inset 0px -12px 12px -6px #0000007b;
+    color: white;
+}
+
+section.estrofe2 {
+    background-image: url(../imagens/flor-e2.jpg);
+    background-position: center center;
+}
+
+section.estrofe2 > p {
+    background-color: rgba(0, 0, 0, 0.300);
+    padding: 5px;
+}
+
+section.estrofe3 {
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding: 10vh 0 0 0;
+}
+
+section.estrofe4 {
+    background-color: black;
+    color: white;
+    text-align: right;
+}
+
+section.estrofe5 {
+    background-image: url(../imagens/carta-e5.jpg);
+    background-position: center center;
+}
+
+section.estrofe5 > p {
+    background-color: rgba(0, 0, 0, 0.467);
+    padding: 5px;
+}
+
+section.estrofe6 {
+    padding: 10vh 0 0 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 570px){
+    article > section > p {
+        font-size: 1.5em;
+        margin: 0 20px;
+    }
+    header h1 {
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 370px){
+    article > section > p {
+        font-size: 1.2em;
+        margin: 0 20px;
+    }
+}
